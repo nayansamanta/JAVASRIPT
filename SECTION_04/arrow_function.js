@@ -17,9 +17,25 @@ console.log(user.welcome())
 
 // arrow function 
 
-const chai = () => {
+const chaii = () => {
     let username = "nayan"
     console.log(this.username)
 }
-chai()
+chaii()
+
+
+const chai =() => {
+    let username = "nayan"
+    console.log(this.username)
+}
+// chai()
+
+const addtwo = (num1 ,num2) =>{    
+    num3 = num1+num2
+    return num3     // if we use {}  then we have to write retrun keyword 
+}
+console.log(addtwo(8 , 2))
+
+const addthree = (num1 , num2 ,num3 )=> (num1+num2+num3)   // here we dont to write return keyword 
+console.log(addthree(5,6,9))
 
