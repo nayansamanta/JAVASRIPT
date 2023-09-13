@@ -14,3 +14,12 @@ console.log(user.welcome())
 user.username ="sam"  // here we are trying to upadate the username 
 console.log(user.welcome())
 
+
+// arrow function 
+
+const chai = () => {
+    let username = "nayan"
+    console.log(this.username)
+}
+chai()
+
