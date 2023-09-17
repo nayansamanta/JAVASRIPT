@@ -14,3 +14,5 @@ if(email1){
 }else{
     console.log("dont got a email")
 }
+
+// falsy value : 0 , -0 , false , bigint 0n, " " , null , undefined , nan 
