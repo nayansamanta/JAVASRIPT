@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #545454;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body></body>
+  <script>
+    const mydiv = document.createElement('div')
+    console.log(mydiv)
+    mydiv.className = "main"
+    mydiv.id= Math.round(Math.random()*10+1)
+    mydiv.setAttribute("title" , "title1")
+    // mydiv.innerText ="nayan"
+    mydiv.style.padding = "10px"
+    mydiv.style.backgroundColor = "green"
+    const addtext = document.createTextNode("coffe with coding")
+    mydiv.appendChild(addtext)
+
+    document.body.appendChild(mydiv)
+  </script>
+</html>
