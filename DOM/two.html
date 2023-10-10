@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM learning </title>
+    <style>
+        body{
+            background-color:#545454;
+            color: aliceblue;
+        }
+    </style>
 </head>
 <body>
     <div class="parent">
@@ -13,4 +19,27 @@
         <div class="day">thrusday</div>
     </div>
 </body>
+    <script>
+        const parnt = document.querySelector('.parent')
+        // console.log(parnt.children) 
+        // console.log(parnt.children[1].innerHTML) 
+
+        for (let i = 0; i < parnt.children.length; i++) {
+            //console.log(parnt.children[i].innerHTML)  
+        }
+
+        // we r trying to change the style of 2nd div 
+        parnt.children[1].style.color = "red"
+
+        const dayone = document.querySelector('.day')
+        const dayall = document.querySelectorAll('.day')
+        // console.log(dayone);
+        console.log(dayone.parentElement)
+        console.log(dayone.nextElementSibling)
+        // console.log(dayall);
+
+        console.log("NODES:", parnt.childNodes)
+
+
+    </script>
 </html>
