@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom learning</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;" >
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    // function addlanguage(languagename) {
+    //     const listitem = document.createElement('li')
+    //     listitem.innerHTML = `${languagename}`
+    //     document.querySelector('.language').appendChild(listitem)
+    // }
+    // addlanguage("python")
+
+            // optimize away 
+
+      function optimlanguage(language) {
+        const item = document.createElement('li')
+        item.appendChild(document.createTextNode(language))
+        document.querySelector('.language').appendChild(item)
+      }
+      optimlanguage("c++")
+      optimlanguage("python")
+      optimlanguage("java")
+
+                // EDIT 
+    const secondelement = document.querySelector("li:nth-child(1)")   
+    console.log(secondelement)
+    // secondelement.innerHTML = "mojo"      
+
+    const newli =  document.querySelector('li')
+    newli.textContent = "mojo"
+    secondelement.replaceWith(newli)
+
+    // remove 
+
+    const lastlang = document.querySelector('li:last-child')
+    console.log(lastlang)
+    lastlang.remove()
+
+</script>
+</html>
